@@ -19,56 +19,27 @@ header:hover {
 }
 main {
   display: flex;
-  justify-content: space-between;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-main section {
+  justify-content: center;
   text-align: center;
 }
+
 section h2:hover {
   color: blue;
   text-decoration: underline;
 }
-.rock {
+.player1 fieldset i {
   padding: 0.75rem;
   border: solid 0.1rem black;
   border-radius: 0.8rem;
   margin: 1rem;
 }
-.paper {
+.player2 fieldset i {
   padding: 0.75rem;
   border: solid 0.1rem black;
   border-radius: 0.8rem;
   margin: 1rem;
 }
-.scissors {
-  padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-.rock2 {
-  padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-.paper2 {
-  padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-.scissors2 {
-  padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
-  margin: 1rem;
-}
-.player1 fieldset {
-  justify-content: space-between;
-}
+
 fieldset {
   border: solid 0.1rem black;
 }
