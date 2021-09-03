@@ -5,45 +5,67 @@ html {
   height: 100%;
 }
 body {
-  margin: 0.5rem;
+  margin: 1rem;
   min-height: 100%;
-  border: solid 0.25rem;
-  background-color: wheat;
+  border: solid rgb(153, 255, 0) 0.25rem;
+  background-color: black;
 }
 header {
   text-align: center;
+  padding: 1rem;
+  background-color: rgb(153, 255, 0);
+  border-bottom: rgb(200, 255, 117);
 }
 header:hover {
-  color: blue;
+  color: black;
   text-decoration: underline;
 }
 main {
-  display: flex;
   justify-content: center;
   text-align: center;
+  margin: 5rem;
+}
+section h2 {
+  color: rgb(153, 255, 0);
 }
 
 section h2:hover {
-  color: blue;
+  color: rgb(153, 255, 0);
   text-decoration: underline;
 }
 .player1 fieldset i {
   padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
   margin: 1rem;
+  color: rgb(153, 255, 0);
 }
 .player2 fieldset i {
   padding: 0.75rem;
-  border: solid 0.1rem black;
-  border-radius: 0.8rem;
   margin: 1rem;
+  color: rgb(153, 255, 0);
 }
-
+.player1 fieldset i:hover {
+  border: solid 0.1rem rgb(153, 255, 0);
+  border-radius: 0.8rem;
+}
+.player2 fieldset i:hover {
+  border: solid 0.1rem rgb(153, 255, 0);
+  border-radius: 0.8rem;
+}
 fieldset {
-  border: solid 0.1rem black;
+  border: solid 0.1rem rgb(153, 255, 0);
 }
 input {
-  border: solid 0.1rem black;
+  border: solid 0.1rem rgb(153, 255, 0);
   text-align: center;
+  background-color: gray;
+}
+main .player1 {
+  margin: 3.5rem;
+}
+main .player2 {
+  margin: 3.5rem;
+}
+input:hover {
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
