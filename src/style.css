@@ -82,5 +82,10 @@ input:hover {
 
 footer {
   background-color: rgb(153, 255, 0);
-  font-size: 30px;
+  font-size: 3rem;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  padding: 1rem;
+  padding-left: 8.25rem;
+  text-decoration: underline;
+  border: black solid 0.5rem;
 }

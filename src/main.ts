@@ -15,3 +15,5 @@ const paperButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const scissorsButtonPlaayerTwo = document.querySelector('.player2 i.scissors')
 const playerTwoNameText = document.querySelector('.player2 h2')
 const playerTwoNameInput = document.querySelector('.player2 input')
+
+const winner = document.querySelector('footer')
