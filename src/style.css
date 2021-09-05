@@ -58,7 +58,7 @@ section h2 {
   border-radius: 0.8rem;
 }
 
-.player2 fieldset i:hover {
+.player2 fieldset button:hover {
   border: solid 0.1rem rgb(153, 255, 0);
   border-radius: 0.8rem;
 }
