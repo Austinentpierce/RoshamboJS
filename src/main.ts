@@ -145,7 +145,7 @@ function handlePaperButtonPlayerTwo(event: Event) {
   if (buttonClicked instanceof HTMLButtonElement) {
     if (playerOneChoice != '' && playerOneChoice === 'rock') {
       if (winner) {
-        winner.textContent = 'Player Two Wins!'
+        winner.textContent = 'Player 2 Wins!'
       }
     }
   }
@@ -159,7 +159,7 @@ function handlePaperButtonPlayerTwo(event: Event) {
   if (buttonClicked instanceof HTMLButtonElement) {
     if (playerOneChoice != '' && playerOneChoice === 'scissors') {
       if (winner) {
-        winner.textContent = 'Player One Wins!'
+        winner.textContent = 'Player 1 Wins!'
       }
     }
   }
