@@ -58,7 +58,7 @@ function handleScissorsButtonPlayerOne(event: Event) {
       }
     }
   }
-  if (buttonClicked instanceof HTMLBttonElement) {
+  if (buttonClicked instanceof HTMLButtonElement) {
     if (playerTwoChoice != '' && playerTwoChoice === 'scissors') {
       if (winner) {
         winner.textContent = 'It is a draw!'
@@ -100,9 +100,27 @@ function handlePaperButtonPlayerOne(event: Event) {
   }
 }
 
+paperButtonPlayerOne?.addEventListener('click', handlePaperButtonPlayerOne)
+
 let playerTwoChoice = ''
 const rockButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const paperButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const scissorsButtonPlayerTwo = document.querySelector('.player2 i.scissors')
 const playerTwoNameText = document.querySelector('.player2 h2')
 const playerTwoNameInput = document.querySelector('.player2 input')
+
+
+function handleRockButtonPlayerTwo(event : Event) {
+  playerTwoChoice = 'rock' 
+  
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'It is a draw!'
+      }
+    }
+  }
+  if (buttonClicked)
+}
