@@ -27,6 +27,8 @@ main {
   justify-content: center;
   text-align: center;
   margin: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 section h2 {
@@ -61,23 +63,12 @@ fieldset {
   border: solid 0.1rem rgb(153, 255, 0);
 }
 
-input {
-  border: solid 0.1rem rgb(153, 255, 0);
-  text-align: center;
-  background-color: gray;
-}
-
 main .player1 {
   margin: 3.5rem;
 }
 
 main .player2 {
   margin: 3.5rem;
-}
-
-input:hover {
-  text-decoration: underline;
-  font-size: 1.5rem;
 }
 
 footer {

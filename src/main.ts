@@ -139,10 +139,10 @@ function handleRockButtonPlayerTwo(event: Event) {
 
 rockButtonPlayerTwo?.addEventListener('click', handleRockButtonPlayerTwo)
 
-function handlePaperButtonPlayerTwo(event : Event) {
+function handlePaperButtonPlayerTwo(event: Event) {
   playerTwoChoice = 'paper'
 
-  const buttonClicked = event.target 
+  const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLButtonElement) {
     if (playerOneChoice != '' && playerOneChoice === 'rock') {
@@ -169,17 +169,35 @@ function handlePaperButtonPlayerTwo(event : Event) {
 
 paperButtonPlayerTwo?.addEventListener('click', handlePaperButtonPlayerTwo)
 
-function handleScissorsButtonPlayerTwo(event : Event) {
-  playerTwoChoice = 'scissors' 
+function handleScissorsButtonPlayerTwo(event: Event) {
+  playerTwoChoice = 'scissors'
 
-  const buttonClicked = event.target 
+  const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLButtonElement) {
     if (playerOneChoice != '' && playerOneChoice === 'rock') {
       if (winner) {
-        winner.textContent = 'Player 2 Wins!' 
+        winner.textContent = 'Player 1 Wins!'
       }
     }
   }
-  if (button)
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'Paper 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
+    }
+  }
 }
+
+scissorsButtonPlayerTwo?.addEventListener(
+  'click',
+  handleScissorsButtonPlayerTwo
+)
