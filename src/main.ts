@@ -136,3 +136,50 @@ function handleRockButtonPlayerTwo(event: Event) {
     }
   }
 }
+
+rockButtonPlayerTwo?.addEventListener('click', handleRockButtonPlayerTwo)
+
+function handlePaperButtonPlayerTwo(event : Event) {
+  playerTwoChoice = 'paper'
+
+  const buttonClicked = event.target 
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player Two Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'It is a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player One Wins!'
+      }
+    }
+  }
+}
+
+paperButtonPlayerTwo?.addEventListener('click', handlePaperButtonPlayerTwo)
+
+function handleScissorsButtonPlayerTwo(event : Event) {
+  playerTwoChoice = 'scissors' 
+
+  const buttonClicked = event.target 
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!' 
+      }
+    }
+  }
+  if (button)
+}
