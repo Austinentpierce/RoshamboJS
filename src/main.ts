@@ -109,10 +109,9 @@ const scissorsButtonPlayerTwo = document.querySelector('.player2 i.scissors')
 const playerTwoNameText = document.querySelector('.player2 h2')
 const playerTwoNameInput = document.querySelector('.player2 input')
 
+function handleRockButtonPlayerTwo(event: Event) {
+  playerTwoChoice = 'rock'
 
-function handleRockButtonPlayerTwo(event : Event) {
-  playerTwoChoice = 'rock' 
-  
   const buttonClicked = event.target
 
   if (buttonClicked instanceof HTMLButtonElement) {
@@ -122,5 +121,18 @@ function handleRockButtonPlayerTwo(event : Event) {
       }
     }
   }
-  if (buttonClicked)
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
 }
