@@ -31,18 +31,32 @@ function handleRockButtonPlayerOne(event: Event) {
     }
   }
 
-if (buttonClicked instanceof HTMLButtonElement) {
-  if (playerTwoChoice != '' && playerTwoChoice === 'paper') {
-    if (winner) {
-      winner.textContent = 'Player 2 Wins!'
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'It was a draw'
+      }
     }
   }
 }
-if (buttonClicked instanceof HTMLButtonElement) {
-  if (playerTwoChoice != '' && playerTwoChoice === 'rock') {
-    if (winner) {
-      winner.textContent = 'It was a draw'
+
+function handlePlayerOneChoseScissors(event: Event) {
+  playerOneChoice = 'scissors'
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'It was a draw!'
+      }
     }
   }
 }
-rockButtonPlayerOne?.addEventListener('click', handleRockButtonPlayerOne)
