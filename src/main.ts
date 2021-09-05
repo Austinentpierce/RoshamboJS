@@ -8,8 +8,6 @@ const scissorsButtonPlayerOne = document.querySelector('.player1 i.scissors')
 const playerOneNameText = document.querySelector('.player1 h2')
 const playerOneNameInput = document.querySelector('.player1 input')
 
-let playerTwoChoice = ''
-
 const winner = document.querySelector('footer')
 
 function handleRockButtonPlayerOne(event: Event) {
@@ -95,6 +93,8 @@ function handlePaperButtonPlayerOne(event: Event) {
     }
   }
 }
+
+let playerTwoChoice = ''
 const rockButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const paperButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const scissorsButtonPlaayerTwo = document.querySelector('.player2 i.scissors')
