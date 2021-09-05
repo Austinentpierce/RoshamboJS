@@ -37,6 +37,8 @@ function handleRockButtonPlayerOne(event: Event) {
   }
 }
 
+rockButtonPlayerOne?.addEventListener('click', handleRockButtonPlayerOne)
+
 function handleScissorsButtonPlayerOne(event: Event) {
   playerOneChoice = 'scissors'
 
@@ -64,6 +66,12 @@ function handleScissorsButtonPlayerOne(event: Event) {
     }
   }
 }
+
+scissorsButtonPlayerOne?.addEventListener(
+  'click',
+  handleScissorsButtonPlayerOne
+)
+
 function handlePaperButtonPlayerOne(event: Event) {
   playerOneChoice = 'paper'
 
@@ -95,6 +103,6 @@ function handlePaperButtonPlayerOne(event: Event) {
 let playerTwoChoice = ''
 const rockButtonPlayerTwo = document.querySelector('.player2 i.rock')
 const paperButtonPlayerTwo = document.querySelector('.player2 i.rock')
-const scissorsButtonPlaayerTwo = document.querySelector('.player2 i.scissors')
+const scissorsButtonPlayerTwo = document.querySelector('.player2 i.scissors')
 const playerTwoNameText = document.querySelector('.player2 h2')
 const playerTwoNameInput = document.querySelector('.player2 input')
