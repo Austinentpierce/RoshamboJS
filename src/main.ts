@@ -2,9 +2,9 @@ import './style.css'
 
 let playerOneChoice = ''
 
-const rockButtonPlayerOne = document.querySelector('.player1 i.rock')
-const paperButtonPlayerOne = document.querySelector('.player1 i.paper')
-const scissorsButtonPlayerOne = document.querySelector('.player1 i.scissors')
+const rockButtonPlayerOne = document.querySelector('.player1 .rock')
+const paperButtonPlayerOne = document.querySelector('.player1 .paper')
+const scissorsButtonPlayerOne = document.querySelector('.player1 .scissors')
 
 const winner = document.querySelector('footer')
 
@@ -103,11 +103,9 @@ function handlePaperButtonPlayerOne(event: Event) {
 paperButtonPlayerOne?.addEventListener('click', handlePaperButtonPlayerOne)
 
 let playerTwoChoice = ''
-const rockButtonPlayerTwo = document.querySelector('.player2 i.rock')
-const paperButtonPlayerTwo = document.querySelector('.player2 i.rock')
-const scissorsButtonPlayerTwo = document.querySelector('.player2 i.scissors')
-const playerTwoNameText = document.querySelector('.player2 h2')
-const playerTwoNameInput = document.querySelector('.player2 input')
+const rockButtonPlayerTwo = document.querySelector('.player2 .rock')
+const paperButtonPlayerTwo = document.querySelector('.player2 .rock')
+const scissorsButtonPlayerTwo = document.querySelector('.player2 .scissors')
 
 function handleRockButtonPlayerTwo(event: Event) {
   playerTwoChoice = 'rock'

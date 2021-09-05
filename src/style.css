@@ -37,19 +37,23 @@ section h2 {
   text-decoration: underline;
 }
 
-.player1 fieldset i {
+.player1 fieldset button {
   padding: 0.75rem;
   margin: 1rem;
   color: rgb(153, 255, 0);
+  background-color: black;
+  border: black;
 }
 
-.player2 fieldset i {
+.player2 fieldset button {
   padding: 0.75rem;
   margin: 1rem;
   color: rgb(153, 255, 0);
+  background-color: black;
+  border: black;
 }
 
-.player1 fieldset i:hover {
+.player1 fieldset button:hover {
   border: solid 0.1rem rgb(153, 255, 0);
   border-radius: 0.8rem;
 }
