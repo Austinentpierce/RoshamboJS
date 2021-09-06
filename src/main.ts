@@ -179,6 +179,20 @@ function handleRockButtonPlayerTwo(event: Event) {
       }
     }
   }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
 }
 
 rockButtonPlayerTwo?.addEventListener('click', handleRockButtonPlayerTwo)
@@ -209,6 +223,20 @@ function handlePaperButtonPlayerTwo(event: Event) {
       }
     }
   }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
 }
 
 paperButtonPlayerTwo?.addEventListener('click', handlePaperButtonPlayerTwo)
@@ -236,6 +264,20 @@ function handleScissorsButtonPlayerTwo(event: Event) {
     if (playerOneChoice != '' && playerOneChoice === 'scissors') {
       if (winner) {
         winner.textContent = 'It was a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
       }
     }
   }
