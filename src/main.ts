@@ -5,6 +5,7 @@ let playerOneChoice = ''
 const rockButtonPlayerOne = document.querySelector('.player1 .rock')
 const paperButtonPlayerOne = document.querySelector('.player1 .paper')
 const scissorsButtonPlayerOne = document.querySelector('.player1 .scissors')
+const lizardButtonPlayerOne = document.querySelector('.player1 .lizard')
 
 const winner = document.querySelector('footer')
 
