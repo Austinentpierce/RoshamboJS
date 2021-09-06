@@ -6,6 +6,7 @@ const rockButtonPlayerOne = document.querySelector('.player1 .rock')
 const paperButtonPlayerOne = document.querySelector('.player1 .paper')
 const scissorsButtonPlayerOne = document.querySelector('.player1 .scissors')
 const lizardButtonPlayerOne = document.querySelector('.player1 .lizard')
+const spockButtonPlayerOne = document.querySelector('.player1 .spock')
 
 const winner = document.querySelector('footer')
 
@@ -36,6 +37,20 @@ function handleRockButtonPlayerOne(event: Event) {
       }
     }
   }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
 }
 
 rockButtonPlayerOne?.addEventListener('click', handleRockButtonPlayerOne)
@@ -63,6 +78,20 @@ function handleScissorsButtonPlayerOne(event: Event) {
     if (playerTwoChoice != '' && playerTwoChoice === 'scissors') {
       if (winner) {
         winner.textContent = 'It is a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
       }
     }
   }
@@ -99,6 +128,20 @@ function handlePaperButtonPlayerOne(event: Event) {
       }
     }
   }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerTwoChoice != '' && playerTwoChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
 }
 
 paperButtonPlayerOne?.addEventListener('click', handlePaperButtonPlayerOne)
@@ -107,6 +150,8 @@ let playerTwoChoice = ''
 const rockButtonPlayerTwo = document.querySelector('.player2 .rock')
 const paperButtonPlayerTwo = document.querySelector('.player2 .rock')
 const scissorsButtonPlayerTwo = document.querySelector('.player2 .scissors')
+const lizardButtonPlayerTwo = document.querySelector('.player2 .lizard')
+const spockButtonPlayerTwo = document.querySelector('.player2 .spock')
 
 function handleRockButtonPlayerTwo(event: Event) {
   playerTwoChoice = 'rock'
