@@ -144,6 +144,8 @@ function handlePaperButtonPlayerOne(event: Event) {
   }
 }
 
+paperButtonPlayerOne?.addEventListener('click', handlePaperButtonPlayerOne)
+
 function handleLizardButtonPlayerOne(event: Event) {
   playerOneChoice = 'lizard'
 
@@ -185,6 +187,9 @@ function handleLizardButtonPlayerOne(event: Event) {
     }
   }
 }
+
+lizardButtonPlayerOne?.addEventListener('click', handleLizardButtonPlayerOne)
+
 function handleSpockButtonPlayerOne(event: Event) {
   playerOneChoice = 'spock'
 
@@ -227,7 +232,7 @@ function handleSpockButtonPlayerOne(event: Event) {
   }
 }
 
-paperButtonPlayerOne?.addEventListener('click', handlePaperButtonPlayerOne)
+spockButtonPlayerOne?.addEventListener('click', handleSpockButtonPlayerOne)
 
 let playerTwoChoice = ''
 const rockButtonPlayerTwo = document.querySelector('.player2 .rock')
@@ -370,3 +375,91 @@ scissorsButtonPlayerTwo?.addEventListener(
   'click',
   handleScissorsButtonPlayerTwo
 )
+
+function handleLizardButtonPlayerTwo(event: Event) {
+  playerTwoChoice = 'lizard'
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'It is a draw!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+}
+
+lizardButtonPlayerTwo?.addEventListener('click', handleLizardButtonPlayerTwo)
+
+function handleSpockButtonPlayerTwo(event: Event) {
+  playerTwoChoice = 'spock'
+
+  const buttonClicked = event.target
+
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'rock') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'paper') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'scissors') {
+      if (winner) {
+        winner.textContent = 'Player 2 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'lizard') {
+      if (winner) {
+        winner.textContent = 'Player 1 Wins!'
+      }
+    }
+  }
+  if (buttonClicked instanceof HTMLButtonElement) {
+    if (playerOneChoice != '' && playerOneChoice === 'spock') {
+      if (winner) {
+        winner.textContent = 'It is a draw!'
+      }
+    }
+  }
+}
+
+spockButtonPlayerTwo?.addEventListener('click', handleSpockButtonPlayerTwo)
